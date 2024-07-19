@@ -187,7 +187,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\Library;.\User;.\System</IncludePath>
+              <IncludePath>.\Start;.\Library;.\User;.\System;.\Application;.\Hardware;.\Hardware\inc;.\Hardware\src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -686,6 +686,59 @@
               <FilePath>.\User\stm32f10x_it.h</FilePath>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>Hardware</GroupName>
+          <Files>
+            <File>
+              <FileName>LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\inc\LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\LED.c</FilePath>
+            </File>
+            <File>
+              <FileName>Interf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\inc\Interf.h</FilePath>
+            </File>
+            <File>
+              <FileName>Interf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\Interf.c</FilePath>
+            </File>
+            <File>
+              <FileName>MPU6050_Reg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\inc\MPU6050_Reg.h</FilePath>
+            </File>
+            <File>
+              <FileName>MPU6050.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\inc\MPU6050.h</FilePath>
+            </File>
+            <File>
+              <FileName>MPU6050.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\MPU6050.c</FilePath>
+            </File>
+            <File>
+              <FileName>SpeedControl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\SpeedControl.c</FilePath>
+            </File>
+            <File>
+              <FileName>SpeedControl.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\src\SpeedControl.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Applicant</GroupName>
         </Group>
       </Groups>
     </Target>
