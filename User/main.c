@@ -12,16 +12,12 @@ int main(void)
 
 	LED_GPIO_Init();
 	USART1_Init();
+	MOTOR_Init();
 	MPU6050_Init();
-	Wing_GPIO_Init();
 
 	while (1)
 	{
 		LED_Set(1,1);
-		TIM_SetCompare1(TIM1,20);
-		TIM_SetCompare2(TIM1,20);
-		TIM_SetCompare3(TIM1,20);
-		TIM_SetCompare4(TIM1,20);
-
+		Moto_Pwm(900,900,900,900);
 	}
 }
