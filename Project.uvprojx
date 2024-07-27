@@ -735,10 +735,32 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\src\SpeedControl.h</FilePath>
             </File>
+            <File>
+              <FileName>SI24R1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\src\SI24R1.c</FilePath>
+            </File>
+            <File>
+              <FileName>SI24R1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\inc\SI24R1.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Applicant</GroupName>
+          <Files>
+            <File>
+              <FileName>Applicant.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Application\Applicant.h</FilePath>
+            </File>
+            <File>
+              <FileName>App.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Application\App.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
