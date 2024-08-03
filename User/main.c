@@ -6,9 +6,15 @@ int main()
 {
 	Init_All_Uint();
 	MPU6050_Init();
+	
+	GPIO_Init_All();
+	SI24R1_Init();	
+	uint8_t data = 0;
 	while(1)
 	{
-		LED_Set(1,1);
-		printf("MPU6050%#X \r\n",MPU6050_GetID());
+		data++;
+		SI24R1_SendPayload(&data, 1);
+		printf("Sent: %d\n", data);
+		Delay_ms(1000); // 延迟1秒
 	}
 }
